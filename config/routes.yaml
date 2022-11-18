@@ -1,0 +1,15 @@
+controllers:
+    resource: ../src/Controller/
+    type: attribute
+
+homepage:
+    path: /
+    controller: App\Controller\Admin\DashboardController::index
+
+api_login_check:
+    path: /api/login_check
+
+app.swagger_ui:
+    path: /api/doc
+    methods: GET
+    defaults: { _controller: nelmio_api_doc.controller.swagger_ui }
